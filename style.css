@@ -1,0 +1,147 @@
+body{
+    font-family: "Archivo", serif;
+}
+
+.card {
+    background: url(/assets/img/cardLeader.png) no-repeat;
+    height: 440px;
+    width: 372px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardContent{
+    background-color: rgb(199, 164, 138);
+    width: 85%;
+    height: 88%;
+    border-radius: 15px;
+    margin: 12px 0px 2px 0px;
+}
+
+.cardHead{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    background-color: rgb(199, 164, 138);
+    font-family: "Jacquard 24", serif;
+    font-size: 36px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    width: 295px;
+    margin: 0px 0px 8px 0px;
+    text-decoration: underline;
+    
+}
+
+h3{
+    font-family: "Jacquard 24", serif;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+h4{
+    font-family: "Archivo:ital", serif;
+    text-decoration: underline;
+    margin: 0;
+    font-size: 18px;
+}
+
+.fracProp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Archivo", serif;
+}
+
+.weapons{
+    display: flex;
+    justify-content: center;
+}
+
+.weaponTable{
+    display: flex;
+    flex-direction: row;
+}
+
+.wepTabRow1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 6px 0px 6px;
+}
+
+.wepTabRow2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 6px 0px 6px;
+}
+
+.weaponIcon1{
+    width: 48px;
+}
+
+.weaponIcon2{
+    width: 48px;
+}
+
+.weaponName{
+    font-size: 12px;
+}
+
+.diceRow1{
+    width: 64px;
+}
+
+.diceRow2{
+    width: 64px;
+}
+
+.dice{
+    width: 30px;
+}
+
+.dude{
+    display: flex;
+    justify-content: space-around;
+}
+
+table{
+    width: 90%;
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.spcRuleCont{
+    display: flex;
+    justify-content: center;
+}
+
+.rule{
+    border: solid px rgb(194, 147, 111);
+    border-radius: 10px;
+    background-color: rgb(194, 147, 111);
+    font-size: 14px;
+    margin: 8px 0px 8px 0px;
+    padding: 4px 4px 4px 4px;
+    box-shadow: 12px 16px 20px -3px rgba(0,0,0,0.39) inset;
+    -webkit-box-shadow: 12px 16px 20px -3px rgba(0,0,0,0.39) inset;
+    -moz-box-shadow: 12px 16px 20px -3px rgba(0,0,0,0.39) inset;
+}
+
+.ruleTitel{
+    margin: 0px 4px 0px 4px;
+}
