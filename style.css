@@ -1,8 +1,20 @@
 body{
-    font-family: "Archivo", serif;
+    font-family: "Kanit", serif;
+}
+
+.canvas{
+    display: flex;
 }
 
 .card {
+    background: url(/assets/img/cardLeader.png) no-repeat;
+    height: 440px;
+    width: 372px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardBack{
     background: url(/assets/img/cardLeader.png) no-repeat;
     height: 440px;
     width: 372px;
@@ -48,7 +60,7 @@ h3{
 }
 
 h4{
-    font-family: "Archivo:ital", serif;
+    font-family: "Kanit", serif;
     text-decoration: underline;
     margin: 0;
     font-size: 18px;
@@ -68,27 +80,27 @@ h4{
 
 .weaponTable{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .wepTabRow{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0px 6px 0px 6px;
-    width: 48px;
+    width: 250px;
     border: solid px rgb(194, 147, 111);
     border-radius: 10px;
     padding: 4px 0px 4px 0px;
 }
 
 .weaponIcon1{
-    width: 48px;
+    width: 60px;
 }
 
 .weaponIcon2{
-    width: 48px;
+    width: 60px;
 }
 
 .weaponName{
@@ -98,15 +110,15 @@ h4{
 }
 
 .diceRow{
-    width: 64px;
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .dice{
-    width: 18px;
+    width: 48px;
 }
 
 .dude{
@@ -132,7 +144,7 @@ tr{
     border: solid px rgb(194, 147, 111);
     border-radius: 10px;
     background-color: rgb(194, 147, 111);
-    font-size: 14px;
+    font-size: 12px;
     margin: 8px 0px 8px 0px;
     padding: 4px 4px 4px 4px;
     box-shadow: 12px 16px 20px -3px rgba(0,0,0,0.39) inset;

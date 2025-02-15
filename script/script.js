@@ -1,5 +1,6 @@
 function init() {
     renderCards();
+    renderBackSide();
 }
 
 function renderCards() {
@@ -8,9 +9,6 @@ function renderCards() {
         for (let i = 0; i < dataCard.length; i++) {
             let fracName = dataCard[i].fraction;
             let charName = dataCard[i].name;
-            let tempo1 = dataCard[i].tempo1;
-            let tempo2 = dataCard[i].tempo2;
-            let tempo3 = dataCard[i].tempo3;
             let waff1 = dataCard[i].weapon1;
             let waff2 = dataCard[i].weapon2;
             let waff3 = dataCard[i].weapon3;
@@ -21,15 +19,6 @@ function renderCards() {
             let waffName3 = dataCard[i].weapName3;
             let waffName4 = dataCard[i].weapName4;
             let waffName5 = dataCard[i].weapName5;
-            let unit1 = dataCard[i].unitType1;
-            let unit2 = dataCard[i].unitType2;
-            let unit3 = dataCard[i].unitType3;
-            let am1 = dataCard[i].amor1;
-            let am2 = dataCard[i].amor2;
-            let am3 = dataCard[i].amor3;
-            let lp1 = dataCard[i].LP1;
-            let lp2 = dataCard[i].LP2;
-            let lp3 = dataCard[i].LP3;
             let dc1 = dataCard[i].dice1;
             let dc2 = dataCard[i].dice2;
             let dc3 = dataCard[i].dice3;
@@ -50,14 +39,36 @@ function renderCards() {
             let dc18 = dataCard[i].dice18;
             let dc19 = dataCard[i].dice19;
             let dc20 = dataCard[i].dice20;
-            contentRef.innerHTML += getCardTemplate(fracName, charName, tempo1, tempo2, tempo3, unit1, unit2, unit3, am1, am2, am3, lp1, lp2, lp3, waff1, waff2, waff3, waff4, waff5, waffName1, waffName2, waffName3, waffName4, waffName5, dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8,dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, i);
-            const ruleArea = document.getElementsByClassName('ruleArea');
-            for (let j = 0; j < dataCard[i].rulz.length; j++) {
-                ruleArea[i].innerHTML += `
-                <tr class="rule">
-                    <td class="ruleTitel"><b>${dataCard[i].rulz[j].sonderRegel}:</b></td>
-                    <td class="ruleCnt">${dataCard[i].rulz[j].regelInhalt}</td>
-                </tr>`;
-            }
+            contentRef.innerHTML += getCardTemplate(fracName, charName, waff1, waff2, waff3, waff4, waff5, waffName1, waffName2, waffName3, waffName4, waffName5, dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8,dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, i);
         }
+}
+
+function renderBackSide() {
+    let contentRef = document.getElementById('backSide');
+    contentRef. innerHTML += "";
+    for (let i = 0; i < dataCard.length; i++) {
+        let fracName = dataCard[i].fraction;
+        let charName = dataCard[i].name;
+        let unit1 = dataCard[i].unitType1;
+        let unit2 = dataCard[i].unitType2;
+        let unit3 = dataCard[i].unitType3;
+        let tempo1 = dataCard[i].tempo1;
+        let tempo2 = dataCard[i].tempo2;
+        let tempo3 = dataCard[i].tempo3;
+        let am1 = dataCard[i].amor1;
+        let am2 = dataCard[i].amor2;
+        let am3 = dataCard[i].amor3;
+        let lp1 = dataCard[i].LP1;
+        let lp2 = dataCard[i].LP2;
+        let lp3 = dataCard[i].LP3;
+        contentRef.innerHTML += getBacksideTemplate(fracName, charName, unit1, unit2, unit3, tempo1, tempo2, tempo3, am1, am2, am3, lp1, lp2, lp3)
+        const ruleArea = document.getElementsByClassName('ruleArea');
+        for (let j = 0; j < dataCard[i].rulz.length; j++) {
+            ruleArea[i].innerHTML += `
+            <tr class="rule">
+                <td class="ruleTitel"><b>${dataCard[i].rulz[j].sonderRegel}:</b></td>
+                <td class="ruleCnt">${dataCard[i].rulz[j].regelInhalt}</td>
+            </tr>`;
+        }
+    }
 }
