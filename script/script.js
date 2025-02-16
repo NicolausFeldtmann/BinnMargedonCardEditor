@@ -28,10 +28,10 @@ function renderCards() {
             let dc7 = dataCard[i].dice7;
             let dc8 = dataCard[i].dice8;
             let dc9 = dataCard[i].dice9;
-            let dc10 = dataCard[i].dice12;
+            let dc10 = dataCard[i].dice10;
             let dc11 = dataCard[i].dice11;
-            let dc12 = dataCard[i].dice11;
-            let dc13 = dataCard[i].dice12;
+            let dc12 = dataCard[i].dice12;
+            let dc13 = dataCard[i].dice13;
             let dc14 = dataCard[i].dice14;
             let dc15 = dataCard[i].dice15;
             let dc16 = dataCard[i].dice16;
@@ -39,7 +39,7 @@ function renderCards() {
             let dc18 = dataCard[i].dice18;
             let dc19 = dataCard[i].dice19;
             let dc20 = dataCard[i].dice20;
-            contentRef.innerHTML += getCardTemplate(fracName, charName, waff1, waff2, waff3, waff4, waff5, waffName1, waffName2, waffName3, waffName4, waffName5, dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8,dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, i);
+            contentRef.innerHTML += getCardTemplate(fracName, charName, waff1, waff2, waff3, waff4, waff5, waffName1, waffName2, waffName3, waffName4, waffName5, dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8, dc9, dc10, dc11, dc12, dc13, dc14, dc15, dc16, dc17, dc18, dc19, dc20, i);
         }
 }
 

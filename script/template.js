@@ -13,59 +13,69 @@ function getCardTemplate(fracName, charName, waff1, waff2, waff3, waff4, waff5, 
                 </div>
                 <div class="weaponTable">
 
-                    <div class="wepTabRow">
-                        <div class="weaponName">${waffName1}</div>
-                        <img class="weaponIcon1" src="${waff1}">
-                            <div class="diceRow">
-                            <img class="dice" src="${dc1}">
-                            <img class="dice" src="${dc2}">
-                            <img class="dice" src="${dc3}">
-                            <img class="dice" src="${dc4}">
+                    <div class="wepBlock">
+                    <div class="weaponName">${waffName1}</div>
+                        <div class="wepTabRow">
+                            <img class="weaponIcon1" src="${waff1}">
+                                <div class="diceRow">
+                                <img class="dice" src="${dc1}">
+                                <img class="dice" src="${dc2}">
+                                <img class="dice" src="${dc3}">
+                                <img class="dice" src="${dc4}">
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="wepTabRow">
-                        <div class="weaponName">${waffName2}</div>
-                        <img class="weaponIcon1" src="${waff2}">
-                            <div class="diceRow">
-                            <img class="dice" src="${dc5}">
-                            <img class="dice" src="${dc6}">
-                            <img class="dice" src="${dc7}">
-                            <img class="dice" src="${dc8}">
+                    <div class="wepBlock">
+                    <div class="weaponName">${waffName2}</div>
+                        <div class="wepTabRow">
+                            <img class="weaponIcon1" src="${waff2}">
+                                <div class="diceRow">
+                                <img class="dice" src="${dc5}">
+                                <img class="dice" src="${dc6}">
+                                <img class="dice" src="${dc7}">
+                                <img class="dice" src="${dc8}">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="wepTabRow">
-                        <div class="weaponName">${waffName3}</div>
-                        <img class="weaponIcon2" src="${waff3}">
-                            <div class="diceRow">
-                            <img class="dice" src="${dc9}">
-                            <img class="dice" src="${dc10}">
-                            <img class="dice" src="${dc11}">
-                            <img class="dice" src="${dc12}">
+                    <div class="wepBlock">
+                    <div class="weaponName">${waffName3}</div>
+                        <div class="wepTabRow">
+                            <img class="weaponIcon1" src="${waff3}">
+                                <div class="diceRow">
+                                <img class="dice" src="${dc9}">
+                                <img class="dice" src="${dc10}">
+                                <img class="dice" src="${dc11}">
+                                <img class="dice" src="${dc12}">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="wepTabRow">
-                        <div class="weaponName">${waffName4}</div>
-                        <img class="weaponIcon2" src="${waff4}">
-                            <div class="diceRow">
-                            <img class="dice" src="${dc13}">
-                            <img class="dice" src="${dc14}">
-                            <img class="dice" src="${dc15}">
-                            <img class="dice" src="${dc16}">
+                    <div class="wepBlock">
+                    <div class="weaponName">${waffName4}</div>
+                        <div class="wepTabRow">
+                            <img class="weaponIcon1" src="${waff4}">
+                                <div class="diceRow">
+                                <img class="dice" src="${dc13}">
+                                <img class="dice" src="${dc14}">
+                                <img class="dice" src="${dc15}">
+                                <img class="dice" src="${dc16}">
+                            </div>
                         </div>
                     </div>
 
                     
-                    <div class="wepTabRow">
-                        <div class="weaponName">${waffName5}</div>
-                        <img class="weaponIcon2" src="${waff5}">
-                            <div class="diceRow">
-                            <img class="dice" src="${dc17}">
-                            <img class="dice" src="${dc18}">
-                            <img class="dice" src="${dc19}">
-                            <img class="dice" src="${dc20}">
+                    <div class="wepBlock">
+                    <div class="weaponName">${waffName5}</div>
+                        <div class="wepTabRow">
+                            <img class="weaponIcon1" src="${waff5}">
+                                <div class="diceRow">
+                                <img class="dice" src="${dc17}">
+                                <img class="dice" src="${dc18}">
+                                <img class="dice" src="${dc19}">
+                                <img class="dice" src="${dc20}">
+                            </div>
                         </div>
                     </div>
                     
@@ -81,28 +91,40 @@ function getBacksideTemplate(fracName, charName, unit1, unit2, unit3, tempo1, te
         <div class="cardBack">
             <div class="cardContent">
                 <h5>${fracName}</h5>
-                <p>MARSCHTEMPO</p>
                 <div class="unitBox">
                     <div class="nameRow">
                         <div class="unit">${unit1}</div>
                         <div class="unit">${unit2}</div>
                         <div class="unit">${unit3}</div>
                     </div>
-                    <div class="amorRow">
-                        <div class="amor">${am1}</div>
-                        <div class="amor">${am2}</div>
-                        <div class="amor">${am3}</div>
+
+                    <div class="amorBlock"
+                        <p>AMOR:</p>
+                        <div class="amorRow">
+                            <div class="amor">${am1}</div>
+                            <div class="amor">${am2}</div>
+                            <div class="amor">${am3}</div>
+                        </div>
                     </div>
-                    <div class="lifeRow">
-                        <div class="life">${lp1}</div>
-                        <div class="life">${lp2}</div>
-                        <div class="life">${lp3}</div>
+
+                    <div class="lifeBlock">
+                        <p>LP:</p>
+                        <div class="lifeRow">
+                            <div class="life">${lp1}</div>
+                            <div class="life">${lp2}</div>
+                            <div class="life">${lp3}</div>
+                        </div>
                     </div>
+
+                    <div class="speedBlock">
+                        <p>MARSCHTEMPO:</p>
                         <div class="speedRow">
-                        <div class="speed">${tempo1}</div>
-                        <div class="speed">${tempo2}</div>
-                        <div class="speed">${tempo3}</div>
+                            <div class="speed">${tempo1}</div>
+                            <div class="speed">${tempo2}</div>
+                            <div class="speed">${tempo3}</div>
+                        </div>
                     </div>
+
                 </div>
                 <div class="spcRuleCont">
                     <table>
