@@ -2,7 +2,7 @@ let dataCard = [
     {
         "fraction": "Justicar 'Ole Kortez'",
         "name": "Darf 2 X pro Runde aktiv. werden!",
-        "tempo1": "6",
+        "tempo1": "6 Zoll",
         "tempo2": "",
         "tempo3": "",
         "unitType1": "'Ole Kortez'",
@@ -139,7 +139,7 @@ let dataCard = [
         "dice4": "",
         "dice5": "assets/img/redDice.PNG",
         "dice6": "assets/img/redDice.PNG",
-        "dice7": "",
+        "dice7": "assets/img/whiteDice.PNG",
         "dice8": "",
         "dice9": "assets/img/redDice.PNG",
         "dice10": "assets/img/redDice.PNG",
